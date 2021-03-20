@@ -22,7 +22,7 @@ def index():
 def scraper():
     mars=mongo.db.mars
     mars_data = scrape_mars.scrape_info()
-    mars.db.collection.update({}, mars_data, upsert=True)
+    mars.update({}, mars_data, upsert=True)
     return redirect("/", code=302)
 
 

@@ -22,6 +22,11 @@
       <div class="col-md-12">
         <h4 class="heading">{{mars.news_title}}</h4>
         <small>{{mars.news_p}}</small>
+
+        
+        <table>
+          {{mars.marsfacts_html | safe}}
+        </table>
       </div>
     </div>
 
