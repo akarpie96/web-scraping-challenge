@@ -7,14 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nasa Info</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="background-color: aqua;">
 
-    <div class="jumbotron text-center">
-      <h1>NASA Information</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click for more info!</a></p>
+    <div class="jumbotron text-center"  style="background-color:blue!important">
+      <img src="https://cdn.shopify.com/s/files/1/2341/9769/products/WebNASAInsigniaBlackHoodieFrontClose_large.jpg?v=1572641414" alt="Italian Trulli" style="width:200px;height:200px">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" style="background-color: black;" role="button">Click for more info!</a></p>
     </div>
 
     <!-- Craigslist Listings -->
@@ -23,8 +25,8 @@
         <h4 class="heading">{{mars.news_title}}</h4>
         <small>{{mars.news_p}}</small>
 
-        
-        <table>
+
+        <table class="table">
           {{mars.marsfacts_html | safe}}
         </table>
       </div>
