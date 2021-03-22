@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="container" style="background-color: aqua;">
+  <div class="container" style="background-color:white;">
 
     <div class="jumbotron text-center"  style="background-color:blue!important">
       <img src="https://cdn.shopify.com/s/files/1/2341/9769/products/WebNASAInsigniaBlackHoodieFrontClose_large.jpg?v=1572641414" alt="Italian Trulli" style="width:200px;height:200px">
@@ -22,17 +22,27 @@
     <!-- Craigslist Listings -->
     <div class="row" id="craiglist-listings">
       <div class="col-md-12">
+        <h2 ><u>Latest Mars News</u></h2>
         <h4 class="heading">{{mars.news_title}}</h4>
         <small>{{mars.news_p}}</small>
-
-
-        <table class="table">
-          {{mars.marsfacts_html | safe}}
-        </table>
+        <hr>
       </div>
     </div>
-
-  </div>
+    <div class="row">
+      <div class="col col-8">
+          <h2><u>Featured Mars Image</u></h2>
+          <img src={{mars.featured_image_url}} alt="Featured image" style="width:200px;height:100px;>
+      </div>
+      <div class="col col-4>
+      
+      <h2><u>Mars Facts</u></h2>
+      <table class="table table-striped table-dark">
+        <thead> 
+        {{mars.marsfacts_html | safe}}
+      </thead>
+      </table>
+  
+      </div>
 </body>
 
 </html>
