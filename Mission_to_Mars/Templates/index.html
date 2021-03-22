@@ -11,11 +11,11 @@
 </head>
 
 <body>
-  <div class="container" style="background-color:white;">
+  <div class="container">
 
     <div class="jumbotron text-center"  style="background-color:blue!important">
       <img src="https://cdn.shopify.com/s/files/1/2341/9769/products/WebNASAInsigniaBlackHoodieFrontClose_large.jpg?v=1572641414" alt="Italian Trulli" style="width:200px;height:200px">
-      <h1>Mission to Mars</h1>
+      <h1 class="title">Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" style="background-color: black;" role="button">Click for more info!</a></p>
     </div>
 
@@ -31,18 +31,35 @@
     <div class="row">
       <div class="col col-8">
           <h2><u>Featured Mars Image</u></h2>
-          <img src={{mars.featured_image_url}} alt="Featured image" style="width:200px;height:100px;>
+          <img src={{mars.featured_image_url}} alt="Featured image">
+        <hr>
       </div>
-      <div class="col col-4>
+      <div class="col col-4">
       
-      <h2><u>Mars Facts</u></h2>
-      <table class="table table-striped table-dark">
+      <h2 float='right'><u>Mars Facts</u></h2>
+      <table class="table table-striped table-dark" style="float: right;">
         <thead> 
         {{mars.marsfacts_html | safe}}
       </thead>
       </table>
+      <hr>
   
       </div>
+  <div class="row">
+  <div class="col-md-12">
+  <h2 style="text-align:center">Mars Hemispheres</h2>
+  </div>
+  </div>
+<hr>
+<div class="row">
+  {% for image_url in  mars.hemisphere_image_urls %}
+  <div class="col col-6">
+      <div class="boxmargin">
+          <img src={{image_url.img_url}} alt={{image_url.img_url}}>
+          <h3>{{image_url.title}}</h3>
+      </div>
+  </div>
+  {% endfor %}
 </body>
 
 </html>
