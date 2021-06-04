@@ -14,12 +14,15 @@ The objective is to scrape data from [NASA Mars](https://mars.nasa.gov/news/?pag
 
 ## Script 
 
-[Flask App](/Mission_to_Mars/app.py)
-[Scrape](/Mission_to_Mars/scrape_mars.py)
+* [Flask App](/Mission_to_Mars/app.py)
+
+* [Scrape](/Mission_to_Mars/scrape_mars.py)
 
 ## Home Page of Flask App - User Clicks "Click Info" to Initiate WebScrape 
 
+<img src="/Mission_to_Mars/Mars_app(1).PNG" alt="My cool logo"/>
 
+<img src="/Mission_to_Mars/Mars_app(2).PNG" alt="My cool logo"/>
 
 
 
