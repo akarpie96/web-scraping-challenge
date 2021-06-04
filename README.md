@@ -10,3 +10,16 @@ The objective is to scrape data from [NASA Mars](https://mars.nasa.gov/news/?pag
 * JPL clicks into the featured image and grabs the URL
 * Space Facts grab the relevant Mars facts on the website and leaves out Earth Facts
 * Astrogeology website grabs the clicks through the 4 different hemisphere of Mars and stores the URL of the images to be displayed.
+
+
+## Script 
+
+[Flask App](/Mission_to_Mars/app.py)
+[Scrape](/Mission_to_Mars/scrape_mars.py)
+
+## Home Page of Flask App - User Clicks "Click Info" to Initiate WebScrape 
+
+
+
+
+
